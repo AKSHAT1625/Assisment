@@ -1,0 +1,36 @@
+package com.google;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+     
+        int X,Y,N, i, sum=0;
+
+
+        Scanner s = new Scanner(System.in);
+
+
+                System.out.println("please enter the value of X");
+         X= s.nextInt();
+        System.out.println("Please enter the value of Y");
+        Y= s.nextInt();
+        System.out.println("please enter the value of N");
+        N= s.nextInt();
+        for ( i = 1; i<N ; i++) {
+
+            if (i % X == 0 || i % Y == 0) {
+
+            sum = sum + i;
+        }}
+                System.out.println("The sum is"  +sum);
+        int    dv, Reverse=0;
+
+        while(sum!=0) {
+            int digit = sum%10;
+            Reverse =  Reverse*10 + digit;
+            sum /=10;
+        }
+        System.out.println("The Reverse of the sum is "+Reverse);
